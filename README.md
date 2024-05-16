@@ -1,1 +1,1 @@
-si Pingkian Gwapa 
+
