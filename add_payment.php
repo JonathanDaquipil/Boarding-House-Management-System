@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-// Assuming the fields are coming from $_POST
+
 $invoice_number = $_POST['invoice_number'];
 $amount_paid = $_POST['amount_paid'];
 $payment_date = $_POST['payment_date'];
