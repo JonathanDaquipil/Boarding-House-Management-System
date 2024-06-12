@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $payment_id = $_POST['payment_id'];
     $status = $_POST['status'];
 
-    // Validate incoming data
+ 
     if (empty($payment_id) || empty($status)) {
         echo json_encode(['success' => false, 'message' => 'Missing required data']);
         exit;
