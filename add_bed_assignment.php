@@ -43,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($query);
     $stmt->bind_param("iiiss", $userId, $roomId, $bedId, $dateStart, $dueDate);
 
-    // Execute the query
+
     if ($stmt->execute()) {
      
         header("Location: bedassignment.php");
         exit();
     } else {
-        // Display an error message if insertion fails
+  
         echo "Error: " . $stmt->error;
     }
 
