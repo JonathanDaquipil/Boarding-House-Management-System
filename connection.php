@@ -29,12 +29,12 @@ if (!empty($fname) &&!empty($lname) &&!empty($bdate) &&!empty($address) &&!empty
     
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
-    // Check connection
+    
     if ($conn->connect_error) {
         die("Connection failed: ". $conn->connect_error);
     }
 
-    // Check if the email already exists
+  
     $SELECT = "SELECT Email FROM registration_table WHERE Email =? LIMIT 1";
     $INSERT = "INSERT INTO registration_table (First_Name, Last_Name, Birth_Date, Add_ress, Phone_Nnumber, Email, Pass_word, Confirm_Password, Gender,User_Type) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
