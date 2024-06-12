@@ -10,8 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $total_rate = $_POST['total_rate'];
     $due_date = $_POST['due_date'];
 
-    // Debugging: print form data
-    // echo "<pre>"; print_r($_POST); echo "</pre>";
+
+ 
 
     // Check for missing required fields
     if (!$invoice_number || !$boarder_name || !$discount || !$penalty || !$total_rate || !$due_date) {
