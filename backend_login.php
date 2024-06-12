@@ -2,11 +2,11 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Collect POST data
+   
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Database connection details
+ 
     $host = "localhost";
     $dbusername = "root";
     $dbpassword = "";
