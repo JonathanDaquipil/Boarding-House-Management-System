@@ -54,7 +54,7 @@
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            echo "<tr id='payment-row-" . $row['ph_id'] . "'>"; // Add ID to each row
+            echo "<tr id='payment-row-" . $row['ph_id'] . "'>";
             echo "<td>" . $row['invoice_number'] . "</td>";
             echo "<td>" . $row['amount_paid'] . "</td>";
             echo "<td>" . $row['payment_date'] . "</td>";
@@ -62,7 +62,7 @@
             echo "<td>";
            
         
-            // Delete Button (triggering confirmation)
+            
             echo "<button class='btn btn-danger delete-btn' data-ph-id='" . $row['ph_id'] . "'>Delete</button>"; // Corrected data attribute name
             echo "</td>";
             echo "</tr>";
