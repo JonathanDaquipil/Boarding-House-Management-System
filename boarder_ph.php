@@ -120,9 +120,9 @@
 
 <script>
 
-    // Handle Delete Button Click
+   
     $(document).on('click', '.delete-btn', function() {
-        const paymentId = $(this).data('ph-id'); // Corrected data attribute name
+        const paymentId = $(this).data('ph-id'); 
         if (confirm('Are you sure you want to delete this payment?')) {
             $.ajax({
                 url: 'deleteph_payment.php',
