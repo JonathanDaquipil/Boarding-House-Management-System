@@ -138,7 +138,7 @@
         </div>
     </div>
 
-    <!-- View Bed Modal -->
+   
     <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -177,7 +177,7 @@
         </div>
     </div>
 
-    <!-- Edit Bed Modal -->
+    
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
