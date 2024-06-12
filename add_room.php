@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO room_table (room_no, description) VALUES ('$room_number', '$description')";
     
     if ($conn->query($sql) === TRUE) {
-        // Redirect back to roommanagement.php after successful insertion
+     
         header("location: roommanagement.php");
         exit();
     } else {
