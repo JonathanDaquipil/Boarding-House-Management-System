@@ -186,7 +186,7 @@ if (isset($_GET['boarderId'])) {
         </div>
     </div>
 
-    <!-- Edit Bed Modal -->
+   
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -225,7 +225,7 @@ if (isset($_GET['boarderId'])) {
         </div>
     </div>
 
-    <!-- Hidden form to handle deletions -->
+  
     <form id="deleteForm" action="delete_bed_assignment.php" method="POST" style="display: none;">
         <input type="hidden" id="deleteAssignmentId" name="assignment_id">
     </form>
