@@ -12,12 +12,12 @@ $query_boarders = "SELECT COUNT(*) AS total_boarders FROM registration_table WHE
 $result_boarders = mysqli_query($conn, $query_boarders);
 $total_boarders = mysqli_fetch_assoc($result_boarders)['total_boarders'];
 
-// Fetch total number of rooms
+
 $query_rooms = "SELECT COUNT(*) AS total_rooms FROM room_table";
 $result_rooms = mysqli_query($conn, $query_rooms);
 $total_rooms = mysqli_fetch_assoc($result_rooms)['total_rooms'];
 
-// Fetch total number of beds
+
 $query_beds = "SELECT COUNT(*) AS total_beds FROM bed_table";
 $result_beds = mysqli_query($conn, $query_beds);
 $total_beds = mysqli_fetch_assoc($result_beds)['total_beds'];
