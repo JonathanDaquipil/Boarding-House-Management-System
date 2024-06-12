@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Update boarder_payments_proof table status
+
     $update_proof_query = "UPDATE boarder_payments_proof
                            SET status='$status' 
                            WHERE payment_id='$payment_id'";
