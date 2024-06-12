@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Include the file that establishes the database connection
+require 'config.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $billId = $_POST['bill_id'];
@@ -12,6 +12,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error: " . $query . "<br>" . mysqli_error($conn);
     }
 }
-
 mysqli_close($conn);
 ?>
