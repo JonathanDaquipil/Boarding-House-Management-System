@@ -1,4 +1,3 @@
-
 <?php
 require 'config.php'; // Ensure this points to your database configuration file
 

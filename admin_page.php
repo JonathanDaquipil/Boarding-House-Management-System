@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-
+// Check if the user is logged in and is an admin
 if (!isset($_SESSION['user_id']) || $_SESSION['usertype'] != 'Admin') {
     header('Location: login_form.php');
     exit();

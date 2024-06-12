@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(darkforest.png) no-repeat;
+  background-size: cover;
+}
+
+.list .pic {
+  height: 250px;
+  width: 300px;
+  padding-top: -30px;
+  margin-top: -60px;
+}
+
+.formtitle {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #ffff;
+  border-radius: 18px;
+  margin-bottom: 5px;
+  margin-top: -940px;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.list {
+  height: 1115px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #ffff;
+  border-radius: 18px;
+  padding: 70px 50px;
+ 
+}
+
+.list .selection .h1 {
+  top: 20px;
+}
+
+.list ul li {
+  list-style-type: none;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 25px;
+  height: 45px;
+  font-weight: 600px;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 20px;
+  font-family: 'Poppins,'sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.list ul li a:hover {
+  color: #ffff;
+}
+
+.table {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-right: 875px;
+  width: 90%; /* Ensure the table takes full width */
+  height: 50px;
+}
+
+.table td {
+  color: #ffffff;
+  text-align: left; /* Align text to the left */
+  padding-left: 10px; /* Add padding for better readability */
+  
+  
+}
+
+
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.addBedAssignmentModal{
+  display: none;
+}
+.editBedModal {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+  /* Adjustments for smaller screens */
+}
