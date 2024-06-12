@@ -8,11 +8,11 @@ $payment_date = $_POST['payment_date'];
 $payment_method = $_POST['payment_method'];
 $status = $_POST['status'];
 
-// Insert into payments table
+
 $query = "INSERT INTO payments (invoice_number, amount_paid, payment_date, payment_method, status) 
           VALUES ('$invoice_number', '$amount_paid', '$payment_date', '$payment_method', '$status')";
 if ($conn->query($query) === TRUE) {
-    // Get the last inserted ID
+ 
     $payment_id = $conn->insert_id;
 
     // If the status is "Paid", insert into payment_history
