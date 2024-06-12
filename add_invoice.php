@@ -13,13 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
  
 
-    // Check for missing required fields
+  
     if (!$invoice_number || !$boarder_name || !$discount || !$penalty || !$total_rate || !$due_date) {
         echo "All fields are required.";
         exit;
     }
 
-    // Fetch boarder name associated with the selected user ID
+
     $boarderNameQuery = "SELECT CONCAT(fname, ' ', lname) AS full_name FROM registration_table WHERE user_id = ?";
     $stmt = $conn->prepare($boarderNameQuery);
     $stmt->bind_param("i", $boarder_name);
