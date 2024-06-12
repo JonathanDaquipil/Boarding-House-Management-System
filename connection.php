@@ -1,5 +1,5 @@
 <?php
-// Collecting the POST data
+
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $bdate = $_POST['bdate'];
@@ -11,7 +11,7 @@ $cpassword = $_POST['cpassword'];
 $gender = $_POST['gender'];
 $utype = $_POST['utype'];           
 
-// Check if all fields are filled
+
 if (!empty($fname) &&!empty($lname) &&!empty($bdate) &&!empty($address) &&!empty($number) &&!empty($email) &&!empty($password) &&!empty($cpassword) &&!empty($gender)  &&!empty($utype) ) {
 
     
