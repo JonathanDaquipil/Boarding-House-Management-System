@@ -1,38 +1,145 @@
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  body{
-    display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(darkforest.png) no-repeat;
+  background-size: cover;
+}
+
+.list .pic{
+  
+  height: 250px;
+  width: 300px;
+  padding-top: -30px;
+  margin-top: -60px;
+  
+}
+
+.list{
+  
+  height: 1100px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #ffff;
+  border-radius: 18px;
+  padding: 70px 50px;
+
+}
+
+.list .selection .h1{
+ top: 20px;
+}
+
+ .list ul li{
+  list-style-type: none;
+  
+}
+
+.list ul li a{
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 25px;
+  height: 45px;
+  font-weight: 600px;
+  text-align: left;
+  line-height:  30px;
+  padding-top: 20px;
+  font-family: 'Poppins,'sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+.list ul li a:hover{
+  color: #ffff;
+}
+
+
+
+
+ .formtitle{
+  width: 1620px;
+  height: 300px;
+  background:transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #ffff;
+  border-radius: 18px;
+  margin-bottom: 800px;
+  padding-top: 150px;
+  font-size: 30px;
+ }
+
+ .dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  /* Existing styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  border-radius: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  margin: 70px; /* Add margin to create space between cards */
+}
+
+.boarders-card {
+background-color: skyblue;
+}
+
+.rooms-card {
+background-color: lightgreen;
+}
+
+.beds-card {
+background-color: yellow;
+}
+
+
+.card balance-card{
+  background-color: yellow;
+}
+
+.card paymenthistory-card{
+  background-color: lightgreen;
+}
+
+
+
+.card span {
+  /* Existing styles */
+  margin-top: auto;
+  margin-bottom: auto; /* Center content horizontally */
+}
+
+@media screen and (max-width: 768px) {
+.dashboard {
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(darkforest.png) no-repeat;
-    background-size: cover;
-    backgroun
-  }
- 
-   .selection .dashboardbtn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border:  none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: 000080;
-    font-weight: 600;
-    transition-duration: 0.4s;
-    position: :left;
-   }
+}
+
+.card {
+    width: 45%;
+    margin-bottom: 10px;
+}
 
 
-  @media screen and (max-width: 500px) {
-    .form .column{
-      flex-wrap: wrap;
-    }
-  }
+}
