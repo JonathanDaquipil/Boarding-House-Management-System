@@ -24,7 +24,7 @@ if ($conn->query($query) === TRUE) {
 
    
     header("Location: payment.php");
-    exit(); // Make sure nothing else is executed after redirection
+    exit();
 } else {
     echo json_encode(['success' => false]);
 }
