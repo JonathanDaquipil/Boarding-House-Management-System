@@ -26,7 +26,7 @@
     <div class="formtitle" id="adminpage">
         <h1> Payment</h1>
 
-        <!-- Table -->
+      
         <div class="table-responsive mt-4">
             <table class="table table-bordered text-center">
                 <thead>
@@ -74,7 +74,7 @@
 
     <script>
         $(document).ready(function() {
-            // Delete Payment Proof
+           
             window.deletePayment = function(payment_id) {
                 if (confirm('Are you sure you want to delete this record?')) {
                     $.ajax({
