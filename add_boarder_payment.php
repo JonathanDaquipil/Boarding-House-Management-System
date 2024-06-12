@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-// Check if the form is submitted
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $payment_id = $_POST['payment_id'];
     $status = $_POST['status'];
