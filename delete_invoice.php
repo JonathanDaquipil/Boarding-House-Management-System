@@ -1,13 +1,12 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
-
+require 'config.php';
 $response = array('success' => false, 'error' => '');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $invoice_id = isset($_POST['invoice_id']) ? $_POST['invoice_id'] : '';
 
     if (!empty($invoice_id)) {
-        // Delete the invoice from the database
+        
         $sql = "DELETE FROM invoice_table WHERE invoice_number = ?";
         $stmt = $conn->prepare($sql);
         
