@@ -222,13 +222,7 @@
     transform: translate(-50%);
     font-size: 20px;
   }
-  .input-group i{
-    position: absolute;
-    right: 20px;  
-    top: 30%;
-    transform: translate(-50%);
-    font-size: 20px;
-  }
+  
   .atan .btn2{
     width: 100%;
     height: 45px;
@@ -349,9 +343,6 @@
   .input-pnumber input::-webkit-inner-spin-button {
      -webkit-appearance: none;
      margin: 0;
-  }
-  .input-pnumber input[type="number "]{
-    -moz-appearance: textfield;
   }
   
 
