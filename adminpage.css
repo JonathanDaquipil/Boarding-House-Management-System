@@ -126,10 +126,9 @@ background-color: yellow;
 
 
 .card span {
-  /* Existing styles */
+
   margin-top: auto;
-  margin-bottom: auto; /* Center content horizontally */
-}
+  margin-bottom: auto;
 
 @media screen and (max-width: 768px) {
 .dashboard {
