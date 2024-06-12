@@ -1,7 +1,6 @@
 <?php
-// Check if payment_id is set in the POST request
 if (isset($_POST['ph_id'])) {
-    // Include your database connection file
+   
     require 'config.php';
 
     // Prepare the DELETE query
