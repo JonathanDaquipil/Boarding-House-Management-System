@@ -7,7 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
     error_log("User ID received: " . $user_id);
 
-    // Delete the user from the registration_table
     $sql = "DELETE FROM registration_table WHERE user_id = '$user_id'";
 
     if ($conn->query($sql) === TRUE) {
@@ -16,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error deleting tenant: " . $conn->error;
     }
 
-    // Close the connection
     $conn->close();
 }
 ?>
