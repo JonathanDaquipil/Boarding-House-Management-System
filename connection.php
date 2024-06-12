@@ -45,7 +45,7 @@ if (!empty($fname) &&!empty($lname) &&!empty($bdate) &&!empty($address) &&!empty
     $rnum = $stmt->num_rows;
     $stmt->close();
 
-    if ($rnum == 0) { // If no email found
+    if ($rnum == 0) { 
         $stmt->close();
     }
 
@@ -72,7 +72,7 @@ if (!empty($fname) &&!empty($lname) &&!empty($bdate) &&!empty($address) &&!empty
         $stmt->execute();
         echo "New record inserted successfully";
 
-    else { // If the email already exists
+    else { 
     echo "Someone already registered using this email.";
 
 }else {
