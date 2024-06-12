@@ -61,7 +61,7 @@ if (isset($_GET['boarderId'])) {
             <h1>Bed Assignment</h1>
         </div>
 
-        <!-- Add New Button -->
+      
         <div class="mb-3">
             <button class="btn btn-success" data-toggle="modal" data-target="#addBedModal">Add New</button>
         </div>
@@ -119,7 +119,7 @@ if (isset($_GET['boarderId'])) {
         </div>
     </div>
 
-    <!-- Add Bed Modal -->
+    
     <div class="modal fade" id="addBedModal" tabindex="-1" aria-labelledby="addBedModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
