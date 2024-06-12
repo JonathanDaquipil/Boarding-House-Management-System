@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("ssssss", $invoice_number, $boarderFullName, $discount, $penalty, $total_rate, $due_date);
 
     if ($stmt->execute()) {
-        // Invoice added successfully
+       
         $message = "Invoice added successfully!";
         echo "<script>
                 alert('$message');
