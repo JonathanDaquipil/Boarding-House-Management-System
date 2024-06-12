@@ -20,13 +20,13 @@ if (!empty($fname) &&!empty($lname) &&!empty($bdate) &&!empty($address) &&!empty
         die();
     }
 
-    // Database connection details
+   
     $host = "localhost";
     $dbusername = "root";   
     $dbpassword = "";
     $dbname = "bh_management_system";
 
-    // Create connection
+    
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
     // Check connection
