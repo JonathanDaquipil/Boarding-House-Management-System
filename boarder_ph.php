@@ -46,10 +46,10 @@
         </thead>
         <tbody id="payment-history-table">
     <?php
-    // PHP code to fetch payment history data from your database
+   
     require 'config.php';
 
-    $query = "SELECT * FROM payment_history"; // Replace 'payment_history' with your actual table name
+    $query = "SELECT * FROM payment_history"; 
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
