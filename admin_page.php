@@ -1,13 +1,13 @@
 <?php
 require 'config.php';
 
-// Check if the user is logged in and is an admin
+
 if (!isset($_SESSION['user_id']) || $_SESSION['usertype'] != 'Admin') {
     header('Location: login_form.php');
     exit();
 }
 
-// Fetch total number of boarders
+
 $query_boarders = "SELECT COUNT(*) AS total_boarders FROM registration_table WHERE utype = 'Boarder'";
 $result_boarders = mysqli_query($conn, $query_boarders);
 $total_boarders = mysqli_fetch_assoc($result_boarders)['total_boarders'];
