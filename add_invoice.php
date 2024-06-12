@@ -2,9 +2,9 @@
 require 'config.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve form data
+
     $invoice_number = $_POST['invoice_number'];
-    $boarder_name = $_POST['boarder_name']; // Assuming this is the user ID
+    $boarder_name = $_POST['boarder_name'];
     $discount = $_POST['discount'];
     $penalty = $_POST['penalty'];
     $total_rate = $_POST['total_rate'];
