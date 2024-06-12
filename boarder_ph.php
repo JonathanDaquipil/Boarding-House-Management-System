@@ -63,7 +63,7 @@
            
         
             
-            echo "<button class='btn btn-danger delete-btn' data-ph-id='" . $row['ph_id'] . "'>Delete</button>"; // Corrected data attribute name
+            echo "<button class='btn btn-danger delete-btn' data-ph-id='" . $row['ph_id'] . "'>Delete</button>"; 
             echo "</td>";
             echo "</tr>";
         }
@@ -127,7 +127,7 @@
             $.ajax({
                 url: 'deleteph_payment.php',
                 type: 'POST',
-                data: { ph_id: paymentId }, // Corrected parameter name
+                data: { ph_id: paymentId }, 
                 success: function(data) {
                     const res = JSON.parse(data);
                     if (res.success) {
