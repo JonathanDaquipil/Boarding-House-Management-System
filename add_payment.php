@@ -15,14 +15,14 @@ if ($conn->query($query) === TRUE) {
  
     $payment_id = $conn->insert_id;
 
-    // If the status is "Paid", insert into payment_history
+
     if ($status === "Paid") {
         $history_query = "INSERT INTO payment_history (invoice_number, amount_paid, payment_date, remarks) 
                           VALUES ('$invoice_number', '$amount_paid', '$payment_date', 'Payment added')";
         $conn->query($history_query);
     }
 
-    // Redirect back to the form
+   
     header("Location: payment.php");
     exit(); // Make sure nothing else is executed after redirection
 } else {
