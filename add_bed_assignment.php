@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $roomId = $roomResult->fetch_assoc()['room_id'];
     $roomStmt->close();
 
-    // Prepare and execute bed_id subquery
+   
     $bedQuery = "SELECT bed_id FROM bed_table WHERE bed_no = ?";
     $bedStmt = $conn->prepare($bedQuery);
     $bedStmt->bind_param("s", $bedNo);
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bedId = $bedResult->fetch_assoc()['bed_id'];
     $bedStmt->close();
 
-    // Prepare the query to insert data into bed_assignment_table
+  
     $query = "INSERT INTO bed_assignment_table (user_id, room_id, bed_id, date_start, due_date) 
               VALUES (?, ?, ?, ?, ?)";
 
