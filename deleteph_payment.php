@@ -3,11 +3,9 @@ if (isset($_POST['ph_id'])) {
    
     require 'config.php';
 
-    // Prepare the DELETE query
     $paymentId = $_POST['ph_id'];
     $deleteQuery = "DELETE FROM payment_history WHERE ph_id = $paymentId";
 
-    // Execute the DELETE query
     if ($conn->query($deleteQuery) === TRUE) {
         // If deletion is successful, return a success message
         echo json_encode(['success' => true]);
