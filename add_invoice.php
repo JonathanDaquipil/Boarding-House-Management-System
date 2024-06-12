@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }, 1000); // Redirect after 1 second
               </script>";
     } else {
-        // Handle error
+   
         echo "Error adding invoice: " . $stmt->error;
     }
 
