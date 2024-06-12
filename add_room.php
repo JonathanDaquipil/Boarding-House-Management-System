@@ -1,8 +1,8 @@
 <?php
-// Assuming you have a database connection established in config.php
+
 require 'config.php';
 
-// Check if form is submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $room_number = $_POST['room_number'];
