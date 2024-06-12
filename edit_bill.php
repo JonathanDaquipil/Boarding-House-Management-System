@@ -1,6 +1,5 @@
 <?php
-require 'config.php'; // Include the file that establishes the database connection
-
+require 'config.php'; 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $billId = $_POST['bill_id'];
     $billName = $_POST['bill_name'];
