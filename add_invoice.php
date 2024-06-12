@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
+require 'config.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Retrieve form data
