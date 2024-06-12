@@ -15,8 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
   
-    // $sql2 = "DELETE FROM payments WHERE payment_id = ?";
-    // $stmt2 = $conn->prepare($sql2);
+  
     // $stmt2->bind_param("i", $id);
     // $stmt2->execute();
 }
