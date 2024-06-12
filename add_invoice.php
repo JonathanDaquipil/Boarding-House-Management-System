@@ -30,12 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $row = $result->fetch_assoc();
         $boarderFullName = $row['full_name'];
     } else {
-        // Handle error if boarder name is not found
+   
         echo "Error: Boarder name not found.";
         exit;
     }
 
-    // Insert data into the invoice table
+
     $insertQuery = "INSERT INTO invoice_table (invoice_number, boarder_name, discount, penalty, total_rate, due_date, status) VALUES (?, ?, ?, ?, ?, ?, NULL)";
     $stmt = $conn->prepare($insertQuery);
     $stmt->bind_param("ssssss", $invoice_number, $boarderFullName, $discount, $penalty, $total_rate, $due_date);
