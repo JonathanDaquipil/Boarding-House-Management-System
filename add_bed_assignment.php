@@ -4,14 +4,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Include your database connection file
     require 'config.php';
 
-    // Retrieve data from the form
+  
     $userId = $_POST['user_id'];
     $roomNo = $_POST['room_no'];
     $bedNo = $_POST['bed_no'];
     $dateStart = $_POST['date_start'];
     $dueDate = $_POST['due_date'];
 
-    // Prepare and execute room_id subquery
+    
     $roomQuery = "SELECT room_id FROM room_table WHERE room_no = ?";
     $roomStmt = $conn->prepare($roomQuery);
     $roomStmt->bind_param("s", $roomNo);
