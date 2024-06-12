@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dbpassword = "";
     $dbname = "bh_management_system";
 
-    // Create connection
+ 
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
     // Check connection
