@@ -39,13 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "INSERT INTO bed_assignment_table (user_id, room_id, bed_id, date_start, due_date) 
               VALUES (?, ?, ?, ?, ?)";
 
-    // Prepare and bind parameters for the query
+
     $stmt = $conn->prepare($query);
     $stmt->bind_param("iiiss", $userId, $roomId, $bedId, $dateStart, $dueDate);
 
     // Execute the query
     if ($stmt->execute()) {
-        // Redirect to bed management page or any other desired page after successful insertion
+     
         header("Location: bedassignment.php");
         exit();
     } else {
