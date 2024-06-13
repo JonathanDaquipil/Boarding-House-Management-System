@@ -1,10 +1,10 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
+require 'config.php'; 
 
 if (isset($_GET['boarder'])) {
     $boarderId = $_GET['boarder'];
     
-    // Query to fetch the due date based on the selected boarder
+    
     $sql = "SELECT due_date FROM invoice_table WHERE boarder_id = ? ORDER BY invoice_id DESC LIMIT 1";
 
     // Prepare the statement
