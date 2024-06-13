@@ -1,7 +1,7 @@
 <?php
 require 'config.php'; 
 
-// Handle AJAX request for boarder details
+
 if (isset($_GET['boarderId'])) {
     $boarderId = intval($_GET['boarderId']);
     $sql = "SELECT fname, lname FROM registration_table WHERE user_id = $boarderId";
@@ -246,7 +246,7 @@ $(document).ready(function(){
         </div>
     </div>
 
-    <!-- JavaScript Libraries -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
@@ -274,10 +274,10 @@ $(document).ready(function(){
     </script>
 
 
-    <!-- Custom JavaScript -->
+ 
     <script>
     $(document).ready(function(){
-        // Function to delete an invoice
+ 
         $(document).on('click', '.delete-btn', function() {
             if (confirm('Are you sure you want to delete this invoice?')) {
                 var invoiceId = $(this).data('invoice-id');
