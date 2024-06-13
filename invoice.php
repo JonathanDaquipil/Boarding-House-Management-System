@@ -293,12 +293,12 @@ $(document).ready(function(){
                             alert('Invoice deleted successfully.');
                             location.reload(); 
                         } else {
-                            // If there's an error, display the error message
+                        
                             alert('Error deleting invoice: ' + response.error);
                         }
                     },
                     error: function(xhr, status, error) {
-                        // If AJAX request fails, display an error message
+                      
                         console.error('Error deleting invoice:', error);
                         alert('Error deleting invoice. Please try again.');
                     }
