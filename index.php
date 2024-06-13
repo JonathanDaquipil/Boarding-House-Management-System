@@ -17,15 +17,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $gender = $conn->real_escape_string($_POST['gender']);
     $utype = $conn->real_escape_string($_POST['utype']);
 
-    // Insert user data into registration_table
+
     $sql = "INSERT INTO registration_table (fname, lname, bdate, address, number, email, password, gender, utype) 
             VALUES ('$fname', '$lname', '$bdate', '$address', '$number', '$email', '$password', '$gender', '$utype')";
 
     if ($conn->query($sql) === TRUE) {
-        // Get the newly created user's ID
+   
         $user_id = $conn->insert_id;
 
-        // Update the boarder_name in bed_assignment_table
+ 
         $update_sql = "
             UPDATE bed_assignment_table bat
             JOIN registration_table rt ON bat.user_id = rt.user_id
