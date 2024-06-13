@@ -183,7 +183,7 @@ if (!$result) {
             modal.find('#edit_bill_rate').val(billRate);
         });
 
-        // Pass data to the delete modal
+
         $('#deleteBillModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget);
             var billId = button.data('bill_id');
@@ -196,6 +196,6 @@ if (!$result) {
 </html>
 
 <?php
-// Close the database connection after use
+
 mysqli_close($conn);
 ?>
