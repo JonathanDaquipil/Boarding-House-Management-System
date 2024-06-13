@@ -1,9 +1,9 @@
 <?php
-// Include your database connection file
+
 require_once 'config.php';
 
-// Fetch notices from the database
-$sql = "SELECT * FROM notices ORDER BY created_at DESC"; // Assuming 'notices' is the table name
+
+$sql = "SELECT * FROM notices ORDER BY created_at DESC"; 
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
