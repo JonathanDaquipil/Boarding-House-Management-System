@@ -32,7 +32,7 @@
         <div class="formtitle" id="adminpage">
             <h1>Payment</h1>
 
-            <!-- Add New Button -->
+         
             <div class="mb-3">
                 <button class="btn btn-success" data-toggle="modal" data-target="#addPaymentModal">Add New</button>
             </div>
@@ -82,12 +82,11 @@
 
                         $conn->close();
 
-                        // Handle Edit Payment Form Submission
                         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit_payment'])) {
                             $paymentId = $_POST['payment_id'];
                             $status = $_POST['status'];
 
-                            // Update status in payments table
+                     
                             $updatePaymentQuery = "UPDATE payments SET status = '$status' WHERE payment_id = $paymentId";
                             if ($conn->query($updatePaymentQuery) === TRUE) {
                                 // Update status in boarder_payments_proof table
