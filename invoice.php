@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
+require 'config.php'; 
 
 // Handle AJAX request for boarder details
 if (isset($_GET['boarderId'])) {
@@ -16,7 +16,7 @@ if (isset($_GET['boarderId'])) {
     exit;
 }
 
-// Fetch boarder names from the database
+
 $boarderNames = [];
 $sql = "SELECT user_id, CONCAT(fname, ' ', lname) AS full_name FROM registration_table";
 $result = $conn->query($sql);
@@ -60,7 +60,7 @@ if ($result->num_rows > 0) {
 
     <div class="formtitle" id="adminpage">
         <h1>Invoice</h1>
-        <!-- Add New Button -->
+
         <button class="btn btn-success mb-3" id="addInvoiceModalButton" data-toggle="modal" data-target="#addInvoiceModal">Add New</button>
         
         <!-- Table -->
