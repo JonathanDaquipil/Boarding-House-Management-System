@@ -7,10 +7,10 @@ if (isset($_GET['boarder'])) {
     
     $sql = "SELECT due_date FROM invoice_table WHERE boarder_id = ? ORDER BY invoice_id DESC LIMIT 1";
 
-    // Prepare the statement
+
     $stmt = $conn->prepare($sql);
 
-    // Bind parameters
+   
     $stmt->bind_param("i", $boarderId);
 
     // Execute the query
