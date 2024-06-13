@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Include the file that establishes the database connection
+require 'config.php';
 
 // Fetch and display bills from the database
 $query = "SELECT * FROM bills";
