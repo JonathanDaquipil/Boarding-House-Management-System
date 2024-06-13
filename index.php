@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $address = $conn->real_escape_string($_POST['address']);
     $number = $conn->real_escape_string($_POST['number']);
     $email = $conn->real_escape_string($_POST['email']);
-    $password = password_hash($conn->real_escape_string($_POST['password']), PASSWORD_BCRYPT); // Encrypt password
+    $password = password_hash($conn->real_escape_string($_POST['password']), PASSWORD_BCRYPT);
     $gender = $conn->real_escape_string($_POST['gender']);
     $utype = $conn->real_escape_string($_POST['utype']);
 
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error_message = "Error registering user: " . $conn->error;
     }
 
-    // Close the connection
+  
     $conn->close();
 }
 ?>
