@@ -1,5 +1,5 @@
 <?php
-// Assuming you have a database connection established in config.php
+
 require 'config.php';
 
 // Check if form is submitted
@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $room_number = $_POST['room_number'];
     $description = $_POST['description'];
 
-    // Update the room in the database
+    
     $sql = "UPDATE room_table SET room_no='$room_number', description='$description' WHERE room_id='$room_id'";
     
     if ($conn->query($sql) === TRUE) {
