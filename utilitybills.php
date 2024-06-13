@@ -6,7 +6,7 @@ $query = "SELECT * FROM bills";
 $result = mysqli_query($conn, $query); 
 
 if (!$result) {
-    // Handle query error
+ 
     die("Query failed: " . mysqli_error($conn));
 }
 ?>
