@@ -33,7 +33,7 @@
             <h1>Room Management</h1>
         </div>
 
-        <!-- Add New Button -->
+   
         <div class="mb-3">
             <button class="btn btn-success" data-toggle="modal" data-target="#addRoomModal">Add New</button>
         </div>
@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    <!-- Add Room Modal -->
+
     <div class="modal fade" id="addRoomModal" tabindex="-1" aria-labelledby="addRoomModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -113,7 +113,7 @@
         </div>
     </div>
 
-    <!-- Edit Room Modal -->
+
     <div class="modal fade" id="editRoomModal" tabindex="-1" aria-labelledby="editRoomModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
