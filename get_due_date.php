@@ -13,13 +13,12 @@ if (isset($_GET['boarder'])) {
    
     $stmt->bind_param("i", $boarderId);
 
-    // Execute the query
+
     $stmt->execute();
 
-    // Get the result
+ t
     $result = $stmt->get_result();
 
-    // Check if there are any rows returned
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         echo $row['due_date']; // Return the due date
