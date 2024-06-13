@@ -9,14 +9,13 @@ $payment_date = $_POST['payment_date'];
 $payment_method = $_POST['payment_method'];
 $status = $_POST['status'];
 
-// Debugging output
 error_log("Received data: payment_id=$payment_id, invoice_number=$invoice_number, amount_paid=$amount_paid, payment_date=$payment_date, payment_method=$payment_method, status=$status");
 
-// Start transaction
+
 $conn->begin_transaction();
 
 try {
-    // Update payments table
+    
     $query = "UPDATE payments 
               SET invoice_number = ?, amount_paid = ?, payment_date = ?, payment_method = ?, status = ? 
               WHERE payment_id = ?";
@@ -26,7 +25,7 @@ try {
         throw new Exception('Error updating payments: ' . $stmt->error);
     }
 
-    // Update boarder_payments_proof table
+
     $proof_update_query = "UPDATE boarder_payments_proof 
                            SET payment_amount = ?, payment_date = ?, payment_method = ?, status = ? 
                            WHERE user_id = (SELECT user_id FROM payments WHERE payment_id = ?) AND invoice_number = ?";
@@ -36,7 +35,7 @@ try {
         throw new Exception('Error updating boarder_payments_proof: ' . $stmt->error);
     }
 
-    // Check if the status is "Paid"
+    
     if ($status === "Paid") {
         // Check if the record already exists in payment_history
         $history_check_query = "SELECT * FROM payment_history WHERE invoice_number = ?";
