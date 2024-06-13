@@ -21,17 +21,17 @@ if (isset($_GET['boarder'])) {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        echo $row['due_date']; // Return the due date
+        echo $row['due_date']; \
     } else {
         echo 'No due date found';
     }
 
-    // Close statement
+  \
     $stmt->close();
 } else {
     echo 'Invalid request';
 }
 
-// Close connection
+\
 $conn->close();
 ?>
