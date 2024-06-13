@@ -61,7 +61,7 @@
            
         
        
-            echo "<button class='btn btn-danger delete-btn' data-ph-id='" . $row['ph_id'] . "'>Delete</button>"; // Corrected data attribute name
+            echo "<button class='btn btn-danger delete-btn' data-ph-id='" . $row['ph_id'] . "'>Delete</button>";
             echo "</td>";
             echo "</tr>";
         }
@@ -75,7 +75,7 @@
     </table>
 </div>
 
-<!-- Edit Modal -->
+
 <div class="modal fade" id="editPaymentModal" tabindex="-1" aria-labelledby="editPaymentModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -115,12 +115,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- JavaScript for handling edit and delete actions -->
+
 <script>
 
     // Handle Delete Button Click
     $(document).on('click', '.delete-btn', function() {
-        const paymentId = $(this).data('ph-id'); // Corrected data attribute name
+        const paymentId = $(this).data('ph-id');
         if (confirm('Are you sure you want to delete this payment?')) {
             $.ajax({
                 url: 'deleteph_payment.php',
