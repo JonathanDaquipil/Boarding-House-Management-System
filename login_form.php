@@ -20,9 +20,9 @@ if (isset($_POST["submit"])) {
             if ($row["utype"] !== $usertype) {
                 echo "<script>alert('This user is not valid.');</script>";
             } else {
-                // Compare the entered password with the hashed password from the database
+              
                 if (password_verify($password, $hashedPassword)) {
-                    // Password is correct, proceed with login
+      
                     $_SESSION["submit"] = true;
                     $_SESSION["user_id"] = $row["user_id"];
                     $_SESSION["usertype"] = $row["utype"];
@@ -31,7 +31,7 @@ if (isset($_POST["submit"])) {
                     if ($usertype == "Admin") {
                         header("Location: admin_page.php");
                     } else {
-                        // Redirect to another page for non-admin users, if applicable
+                   
                         header("Location: boarder_page.php");
                     }
                     exit();
