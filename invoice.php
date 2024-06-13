@@ -173,11 +173,11 @@ $(document).ready(function(){
     $('#boarder_name').change(function() {
         var selectedBoarder = $(this).val();
         $.ajax({
-            url: 'get_due_date.php', // File to handle AJAX request for due date
+            url: 'get_due_date.php', 
             type: 'GET',
             data: { boarder: selectedBoarder },
             success: function(response) {
-                $('#due_date').val(response); // Update the due date input field with the fetched value
+                $('#due_date').val(response);
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching due date:', error);
@@ -190,7 +190,7 @@ $(document).ready(function(){
     });
 });
 </script>
-    <!-- Edit Invoice Modal -->
+
     <div class="modal fade" id="editInvoiceModal" tabindex="-1" aria-labelledby="editInvoiceModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
