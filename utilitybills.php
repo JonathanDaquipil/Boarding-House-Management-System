@@ -81,7 +81,7 @@ if (!$result) {
         </table>
     </div>
 
-    <!-- Add Bill Modal -->
+
     <div class="modal fade" id="addBillModal" tabindex="-1" aria-labelledby="addBillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
