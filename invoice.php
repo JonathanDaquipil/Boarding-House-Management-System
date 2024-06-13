@@ -281,7 +281,7 @@ $(document).ready(function(){
         $(document).on('click', '.delete-btn', function() {
             if (confirm('Are you sure you want to delete this invoice?')) {
                 var invoiceId = $(this).data('invoice-id');
-                // AJAX call to delete_invoice.php
+         
                 $.ajax({
                     url: 'delete_invoice.php',
                     type: 'POST',
@@ -289,9 +289,9 @@ $(document).ready(function(){
                     dataType: 'json',
                     success: function(response) {
                         if(response.success) {
-                            // If deletion is successful, remove the row from the table
+                         
                             alert('Invoice deleted successfully.');
-                            location.reload(); // Reload the page to reflect the changes
+                            location.reload(); 
                         } else {
                             // If there's an error, display the error message
                             alert('Error deleting invoice: ' + response.error);
