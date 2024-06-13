@@ -5,7 +5,7 @@ require 'config.php';
 
 if (isset($_POST["submit"])) {
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
-    $password = $_POST["password"]; // No need to escape since it is not used directly in SQL
+    $password = $_POST["password"]; 
     $usertype = $_POST["utype"];
 
     if ($usertype == "Select") {
@@ -14,9 +14,9 @@ if (isset($_POST["submit"])) {
         $result = mysqli_query($conn, "SELECT * FROM registration_table WHERE email = '$email'");
         if ($result && mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_assoc($result);
-            $hashedPassword = $row["password"]; // Hashed password stored in the database
+            $hashedPassword = $row["password"];
 
-            // Check if the user type matches the stored user type
+          
             if ($row["utype"] !== $usertype) {
                 echo "<script>alert('This user is not valid.');</script>";
             } else {
