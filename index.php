@@ -1,12 +1,12 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
+require 'config.php'; 
 
 $success_message = "";
 $error_message = "";
 
-// Check if form is submitted
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve form data
+  
     $fname = $conn->real_escape_string($_POST['fname']);
     $lname = $conn->real_escape_string($_POST['lname']);
     $bdate = $conn->real_escape_string($_POST['bdate']);
