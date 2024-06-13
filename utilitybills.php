@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-// Fetch and display bills from the database
+
 $query = "SELECT * FROM bills";
 $result = mysqli_query($conn, $query); // Use the established database connection
 
