@@ -111,7 +111,7 @@ if (!$result) {
         </div>
     </div>
 
-    <!-- Edit Bill Modal -->
+
     <div class="modal fade" id="editBillModal" tabindex="-1" aria-labelledby="editBillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
