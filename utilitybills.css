@@ -75,14 +75,14 @@ body {
 .table {
   background-color: rgba(0, 0, 0, 0.6);
   
-  width: 60%; /* Ensure the table takes full width */
+  width: 60%; 
   height: 10px;
 }
 
 .table td {
   color: #ffffff;
-  text-align: left; /* Align text to the left */
-  padding-left: 10px; /* Add padding for better readability */
+  text-align: left;
+  padding-left: 10px;
   
   
 }
@@ -108,5 +108,5 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  /* Adjustments for smaller screens */
+ 
 }
