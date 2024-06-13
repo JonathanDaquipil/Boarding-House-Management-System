@@ -130,7 +130,7 @@
   .btn a{
     text-decoration: none;
   }
-  /* Responsive for the screen*/
+ 
   @media screen and (max-width: 500px) {
     .form .column{
       flex-wrap: wrap;
