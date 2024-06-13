@@ -61,7 +61,7 @@ if (!$result) {
             </thead>
             <tbody>
                 <?php
-                // Loop through the result set and display bill information
+         
                 while ($row = mysqli_fetch_assoc($result)) {
                     $billId = $row['bill_id'];
                     $billName = $row['bills'];
