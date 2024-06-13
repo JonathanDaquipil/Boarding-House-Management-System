@@ -240,7 +240,7 @@
                 }
             });
 
-            // Handle Add Payment Form Submission
+      
             $('#addPaymentForm').on('submit', function(e) {
                 e.preventDefault();
 
@@ -284,7 +284,7 @@
                 });
             });
 
-            // Fill the Edit Modal with Data
+     
             $(document).on('click', '.edit-btn', function() {
                 const paymentId = $(this).data('id');
                 const invoiceNumber = $(this).data('invoice_number');
@@ -301,7 +301,7 @@
                 $('#editStatus').val(status);
             });
 
-            // Handle Edit Payment Form Submission
+       
             $('#editPaymentForm').on('submit', function(e) {
                 e.preventDefault();
 
