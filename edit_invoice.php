@@ -1,6 +1,5 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
-
+require 'config.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $invoice_id = $_POST['invoice_id'];
     $invoice_number = $_POST['invoice_number'];
@@ -11,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $due_date = $_POST['due_date'];
    
 
-    // Update the invoice in the database
     $sql = "UPDATE invoice_table 
             SET invoice_number = ?, boarder_name = ?, discount = ?, penalty = ?, total_rate = ?, due_date = ?
             WHERE invoice_number = ?";
