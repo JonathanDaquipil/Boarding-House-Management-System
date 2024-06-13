@@ -1,28 +1,28 @@
 <?php
-require 'config.php'; // Ensure this points to your database configuration file
+require 'config.php';
 
-// Check if form is submitted
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve form data
+ 
     $fname = $conn->real_escape_string($_POST['fname']);
     $lname = $conn->real_escape_string($_POST['lname']);
     $bdate = $conn->real_escape_string($_POST['bdate']);
     $address = $conn->real_escape_string($_POST['address']);
     $number = $conn->real_escape_string($_POST['number']);
     $email = $conn->real_escape_string($_POST['email']);
-    $password = password_hash($conn->real_escape_string($_POST['password']), PASSWORD_BCRYPT); // Encrypt password
+    $password = password_hash($conn->real_escape_string($_POST['password']), PASSWORD_BCRYPT);
     $gender = $conn->real_escape_string($_POST['gender']);
     $utype = $conn->real_escape_string($_POST['utype']);
 
-    // Insert user data into registration_table
+
     $sql = "INSERT INTO registration_table (fname, lname, bdate, address, number, email, password, gender, utype) 
             VALUES ('$fname', '$lname', '$bdate', '$address', '$number', '$email', '$password', '$gender', '$utype')";
 
     if ($conn->query($sql) === TRUE) {
-        // Get the newly created user's ID
+       
         $user_id = $conn->insert_id;
 
-        // Update the boarder_name in bed_assignment_table
+    
         $update_sql = "
             UPDATE bed_assignment_table bat
             JOIN registration_table rt ON bat.user_id = rt.user_id
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error registering user: " . $conn->error;
     }
 
-    // Close the connection
+
     $conn->close();
 }
 ?>
