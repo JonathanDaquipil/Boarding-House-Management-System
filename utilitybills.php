@@ -142,7 +142,7 @@ if (!$result) {
         </div>
     </div>
 
-    <!-- Delete Bill Modal -->
+
     <div class="modal fade" id="deleteBillModal" tabindex="-1" aria-labelledby="deleteBillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
