@@ -74,14 +74,14 @@
   .table {
     background-color: rgba(0, 0, 0, 0.6);
     margin-right: 875px;
-    width: 90%; /* Ensure the table takes full width */
+    width: 90%;
     height: 50px;
   }
   
   .table td {
     color: #ffffff;
-    text-align: left; /* Align text to the left */
-    padding-left: 10px; /* Add padding for better readability */
+    text-align: left; 
+    padding-left: 10px;
     
     
   }
