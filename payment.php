@@ -89,7 +89,7 @@
                      
                             $updatePaymentQuery = "UPDATE payments SET status = '$status' WHERE payment_id = $paymentId";
                             if ($conn->query($updatePaymentQuery) === TRUE) {
-                                // Update status in boarder_payments_proof table
+                        
                                 $updateBoarderQuery = "UPDATE boarder_payments_proof SET status = '$status' WHERE payment_id = $paymentId";
                                 if ($conn->query($updateBoarderQuery) === TRUE) {
                                     echo json_encode(['success' => true]);
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-    <!-- Add Payment Modal -->
+
     <div class="modal fade" id="addPaymentModal" tabindex="-1" aria-labelledby="addPaymentModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -158,7 +158,7 @@
         </div>
     </div>
 
-    <!-- Edit Payment Modal -->
+
     <div class="modal fade" id="editPaymentModal" tabindex="-1" aria-labelledby="editPaymentModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
