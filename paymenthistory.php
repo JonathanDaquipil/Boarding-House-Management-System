@@ -118,14 +118,14 @@
 
 <script>
 
-    // Handle Delete Button Click
+   
     $(document).on('click', '.delete-btn', function() {
         const paymentId = $(this).data('ph-id');
         if (confirm('Are you sure you want to delete this payment?')) {
             $.ajax({
                 url: 'deleteph_payment.php',
                 type: 'POST',
-                data: { ph_id: paymentId }, // Corrected parameter name
+                data: { ph_id: paymentId }, 
                 success: function(data) {
                     const res = JSON.parse(data);
                     if (res.success) {
