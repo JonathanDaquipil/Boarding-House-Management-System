@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
 
         <button class="btn btn-success mb-3" id="addInvoiceModalButton" data-toggle="modal" data-target="#addInvoiceModal">Add New</button>
         
-        <!-- Table -->
+       
         <div class="table-responsive mt-4">
             <table class="table table-bordered text-center">
                 <thead>
@@ -110,7 +110,7 @@ if ($result->num_rows > 0) {
         </div>
     </div>
 
-     <!-- Add New Invoice Modal -->
+
      <div class="modal fade" id="addInvoiceModal" tabindex="-1" aria-labelledby="addInvoiceModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -136,7 +136,7 @@ if ($result->num_rows > 0) {
                                 }
                                 ?>
                             </select>
-                            <!-- Hidden input fields for first and last name -->
+                    
                             <input type="hidden" id="boarder_fname" name="boarder_fname">
                             <input type="hidden" id="boarder_lname" name="boarder_lname">
                         </div>
