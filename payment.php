@@ -216,7 +216,7 @@
 
     <script>
         $(document).ready(function() {
-            // Delete Payment Script
+         
             $(document).on('click', '.delete-btn', function() {
                 const paymentId = $(this).data('payment_id');
                 if (confirm('Are you sure you want to delete this payment?')) {
