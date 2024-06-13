@@ -3,7 +3,7 @@ require 'config.php';
 
 
 $query = "SELECT * FROM bills";
-$result = mysqli_query($conn, $query); // Use the established database connection
+$result = mysqli_query($conn, $query); 
 
 if (!$result) {
     // Handle query error
